@@ -1,7 +1,16 @@
+import './App.css';
+
 function App() {
-	return (
-		null
-	);
+  return (
+    <div className="App">
+      <header className="App-header">
+
+        <p>
+          Welcome to Math-Magician Site!!!
+        </p>
+      </header>
+    </div>
+  );
 }
 
 export default App;

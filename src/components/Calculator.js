@@ -1,11 +1,19 @@
 import React from 'react';
 
 export default class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      result: 0,
+    };
+  }
+
   render() {
+    const { result } = this.state;
     return (
       <div className="calc-container">
         <div className="screen">
-          0
+          {result}
         </div>
 
         <div className="button-box">

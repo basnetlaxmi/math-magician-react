@@ -22,8 +22,9 @@ To get a local copy up and running follow these simple example steps.
 1) Enter `git@github.com:basnetlaxmi/math-magician.git` into terminal
 
 2) cd math-magician directory
-3) npm start
-4) View in the browser
+3) npm install 
+4) npm start
+5) Open http://localhost:3000 to view it in the browser.
 
 
 

@@ -82,6 +82,9 @@ export default class Calculator extends React.Component {
             <button type="button" className="button-column-1" onClick={this.handleClick}>
               0
             </button>
+            <button type="button" className="button-column-2" onClick={this.handleClick}>
+              .
+            </button>
 
             <button type="button" className="button-column orange" onClick={this.handleClick}>
               =

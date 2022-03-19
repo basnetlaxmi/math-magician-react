@@ -1,21 +1,27 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { useState } from 'react';
+import React from 'react';
 import calculate from '../logic/Calculate';
 
-const Calculator = () => {
-  const [state, NewState] = useState({});
+export default class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  const handleClick = (e) => {
-    NewState(calculate(state, e.target.textContent));
-  };
+  handleClick(e) {
+    this.setState((state) => calculate(state, e.target.textContent));
+  }
 
-  const { next, total } = state;
-  return (
-    <div className="calc-container">
-      <div className="screen">
-        {next || total || 0 }
-      </div>
-      <div className="button-box">
+  render() {
+    const { next, total, operation } = this.state;
+
+    return (
+      <div className="calc-container">
+        <div className="screen">
+          {next || operation || total || 0 }
+        </div>
+        <div className="button-box">
           <div className="button-row">
             <button type="button" className="button-column" onClick={this.handleClick}>
               AC
@@ -85,15 +91,9 @@ const Calculator = () => {
             </button>
           </div>
 
-
-          <button type="button" className="button-column orange" onClick={handleClick}>
-            =
-          </button>
         </div>
 
       </div>
-
-    </div>
-  );
-};
-export default Calculator;
+    );
+  }
+}

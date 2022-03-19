@@ -24,6 +24,11 @@ body {
 }
 
 .button-column-1 {
-  width: 75%;
+  width: 50%;
+  height: 50px;
+}
+
+.button-column-2 {
+  width: 25%;
   height: 50px;
 }

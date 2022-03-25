@@ -1,6 +1,11 @@
 body {
   margin: auto;
+  
+}
+
+.calc-container {
   width: 40%;
+  margin: auto;
 }
 
 .screen {
@@ -31,4 +36,22 @@ body {
 .button-column-2 {
   width: 25%;
   height: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color:#3f869c;
+  width:100%;
+  color: white;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+.menu li {
+  margin: 1rem
 }

@@ -52,6 +52,15 @@ body {
   
 }
 
-.menu li {
-  margin: 1rem
+.menu li{
+  margin: 1rem;
+  
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.quotes-paragraph {
+  align-items: center;
 }

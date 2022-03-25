@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -8,9 +9,9 @@ function Navbar() {
         <h1>Math Magician</h1>
       </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Calculator</a></li>
-        <li><a href="#">Quotes</a></li>
+        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/calculator">Calculator</Link></li>
+        <li><Link to="/quotes">Quotes</Link></li>
       </ul>
     </div>
   );

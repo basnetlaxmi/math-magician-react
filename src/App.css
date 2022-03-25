@@ -1,6 +1,5 @@
 body {
   margin: auto;
-  
 }
 
 .calc-container {
@@ -41,21 +40,20 @@ body {
 .menu {
   display: flex;
   justify-content: space-between;
-  background-color:#3f869c;
-  width:100%;
+  background-color: #3f869c;
+  width: 100%;
   color: white;
 }
 
 .menu ul {
   display: flex;
   list-style: none;
-  
 }
 
-.menu li{
+.menu li {
   margin: 1rem;
-  
 }
+
 .menu li a {
   text-decoration: none;
   color: white;
